@@ -19,7 +19,7 @@ def get_parser():
 def touchpad_ctrl(args):
 	xinput_bytes = subprocess.check_output(['xinput', '--list'])
 	xinput_text = xinput_bytes.decode('utf-8')
-	match = re.search('SynPS/2 Synaptics TouchPad.*id=(\d+)', xinput_text)
+	match = re.search('PS/2 Synaptics TouchPad.*id=(\d+)', xinput_text)
 	if not match:
 		return 'No TouchPad id found!'
 	touchpad_id = match.group(1)
