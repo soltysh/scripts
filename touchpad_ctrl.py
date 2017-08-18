@@ -1,4 +1,4 @@
-#!/usr/bin/python3.4
+#!/usr/bin/python3
 """
 This script is for controlling Lenovo TouchPad on my laptop.
 It uses xinput --list for getting the touchpad's id and then turns if on/off.
